@@ -1,5 +1,5 @@
 {
-  "name": "http-backend",
+  "name": "@repo/db",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -10,11 +10,13 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "express": "^5.1.0"
+    "@prisma/client": "6.15.0",
+    "prisma": "^6.15.0"
   },
   "devDependencies": {
-    "@types/express": "^5.0.3",
-    "@repo/db": "workspace:*",
     "@repo/typescript-config": "workspace:*"
+  },
+  "exports":{
+    "./client": "./src/index.ts"
   }
 }
