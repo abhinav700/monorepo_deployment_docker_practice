@@ -14,9 +14,10 @@
     "prisma": "^6.15.0"
   },
   "devDependencies": {
-    "@repo/typescript-config": "workspace:*"
+    "@repo/typescript-config": "workspace:*",
+    "@types/node": "^22.15.3"
   },
-  "exports":{
-    "./client": "./src/index.ts"
+  "exports": {
+      "./client": "./dist/index.js"
   }
 }

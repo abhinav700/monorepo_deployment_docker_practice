@@ -10,14 +10,21 @@ userRouter.post("/addUser", async (req, res) => {
       return res.status(400).send({error: "Email and name are required"});
     }
 
-    const user = await prisma.user.create({
-      data: {
-        email,
-        name
-      }
-    });
+    // const user = await prisma.user.create({
+    //   data: {
+    //     email,
+    //     name
+    //   }
+    // });
 
-    res.status(201).send(user);
+    // const user = await prisma.user.create({
+    //   data: {
+    //     email,
+    //     name
+    //   }
+    // })
+
+    // res.status(201).send(user);
   } catch (error) {
     
   }
